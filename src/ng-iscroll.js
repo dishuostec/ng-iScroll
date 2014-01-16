@@ -22,7 +22,7 @@ THE SOFTWARE.
 */
 
 
-angular.module('ng-iscroll', []).directive('ngIscroll', function ()
+angular.module('ng-iscroll', []).directive('ngIscroll', [function ()
 {
     return {
         replace: false,
@@ -102,4 +102,4 @@ angular.module('ng-iscroll', []).directive('ngIscroll', function ()
 			}
         }
     };
-});
+}]);
