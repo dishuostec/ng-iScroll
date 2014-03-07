@@ -56,7 +56,7 @@ angular.module('ng-iscroll', []).directive('ngIscroll', ['$timeout', function ($
                             ngiScroll_opts[k] = scope.$parent.myScrollOptions[i][k];
                         }
                     } else {
-                        ngiScroll_opts[i] = scope.$root.myScrollOptions[i];
+                        ngiScroll_opts[i] = scope.$parent.myScrollOptions[i];
                     }
                 }
             }
